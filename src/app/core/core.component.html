@@ -1,0 +1,25 @@
+
+<mat-drawer-container class="core-container" autosize>
+  <mat-drawer #drawer class="core-sidenav" mode="side">
+    <div class='shrink' (click)='shrinkNav()'>
+      <div *ngIf='!shrinkedNav'>
+        <i class="fa fa-compress"></i>
+      </div>
+      <div *ngIf='shrinkedNav'>
+        <i class="fa fa-expand"></i>
+      </div>
+    </div>
+    <app-sidebar></app-sidebar>
+  </mat-drawer>
+  <mat-drawer-content class='drawer-content'>
+      <app-header></app-header>
+      <app-navbar></app-navbar>
+      <div class="core-sidenav-content">
+        <button type="button" mat-button (click)="drawer.toggle()">
+          Toggle sidenav
+        </button>
+        <!-- <app-layout></app-layout> -->
+      </div>
+  </mat-drawer-content>
+</mat-drawer-container>
+<app-footer></app-footer>

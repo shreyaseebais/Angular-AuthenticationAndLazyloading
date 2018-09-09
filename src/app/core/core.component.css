@@ -1,0 +1,25 @@
+.core-container {
+    height: 300px;
+}
+  
+.core-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+  
+.core-sidenav {
+    padding: 20px;
+}
+
+.shrink{
+    font-size:20px;
+    cursor:pointer; 
+    float:right; 
+    margin-right:5px;
+}
+.drawer-content{
+    min-height: 100%;
+    overflow: hidden;
+}
